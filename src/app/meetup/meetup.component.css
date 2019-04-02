@@ -1,0 +1,103 @@
+.event {
+  max-width: 600px;
+  height: 230px;
+  box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.event .metadata {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.event .metadata li {
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.event .metadata li span:last-child {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.event .metadata h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.event .metadata .icon-date {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.event .metadata .icon-location {
+  display: inline-block;
+  width: 20px;
+  height: 27px;
+}
+
+.meetup-avatar img {
+  border-radius: 60px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+:host-context(.light) .event {
+  background: white;
+}
+
+:host-context(.light) .event .icon-date {
+  background: url("../../assets/img/icons/icon_calendar_light.svg") left center;
+}
+
+:host-context(.light) .event .icon-location {
+  background: url("../../assets/img/icons/icon_place_light.svg");
+}
+
+:host-context(.light) .event .metadata h1 {
+  color: #333333;
+}
+
+:host-context(.light) .event .metadata li span:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+:host-context(.dark) .event {
+  background: #313238;
+}
+
+:host-context(.dark) .event .icon-date {
+  background: url("../../assets/img/icons/icon_calendar_dark.svg") left center;
+}
+
+:host-context(.dark) .event .icon-location {
+  background: url("../../assets/img/icons/icon_place_dark.svg");
+}
+
+:host-context(.dark) .event .metadata h1 {
+  color: #EEECEC;
+}
+
+:host-context(.dark) .event .metadata li span:last-child {
+  color: rgba(238, 236, 236, 0.7);
+}
+
+:host-context(#meetups  li:first-child)  .event {
+  border-top-left-radius: 40px;
+}
+
+:host-context(#meetups li:last-child) .event {
+  border-bottom-right-radius: 40px;
+}

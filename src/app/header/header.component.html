@@ -1,0 +1,16 @@
+<header>
+  <ul>
+    <li>
+      <div></div>
+    </li>
+    <li><h3>Meetups</h3></li>
+    <li><a  id="theme-switcher"
+            style="cursor: pointer"
+            (click) ="switch()"
+
+    ></a></li>
+  </ul>
+  <p><input type="text"
+            #box (keyup) = search(box.value)
+            placeholder="Rechercher un meetup"/></p>
+</header>

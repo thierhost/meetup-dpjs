@@ -1,0 +1,107 @@
+#meetups {
+  margin-top: -80px;
+  margin-bottom: 100px;
+}
+
+#meetups li {
+  margin-bottom: 24px;
+}
+
+#meetups li:first-child .event {
+  border-top-left-radius: 40px;
+}
+
+#meetups li:last-child .event {
+  border-bottom-right-radius: 40px;
+}
+
+#meetup-details {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.1);
+  padding: 40px 34px;
+  border-bottom-right-radius: 40px;
+}
+
+#meetup-details p {
+  font-family: "Montserrat", sans-serif;
+}
+
+#meetup-details ul .speaker-infos {
+  display: flex;
+  align-items: center;
+}
+
+#meetup-details ul .speaker-infos p:first-child {
+  margin-right: 10px;
+}
+
+#meetup-details ul .speaker-infos .meta p:first-child {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#meetup-details ul .speaker-infos .meta p:last-child {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#meetup-details ul .talk-title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #5A3CC8;
+  padding-bottom: 40px;
+}
+
+#meetup-details ul .talk-title i.icon-talk {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  background: url("../../assets/img/icons/icon_speak.svg");
+}
+
+#meetup-details ul li:last-child {
+  margin-bottom: 0;
+}
+
+#meetup-details ul li:last-child p.talk-title {
+  padding: 0;
+  border-bottom: none;
+}
+
+:host-context(.light) #meetup-details {
+  background: white;
+}
+
+:host-context(.light) #meetup-details .meta p:first-child {
+  color: #333333;
+}
+
+:host-context(.light) #meetup-details .meta p:last-child {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+:host-context(.light) #meetup-details .talk-title {
+  border-bottom: 1px solid #E3E3F8;
+}
+
+:host-context(.dark) #meetup-details {
+  background: #313238;
+}
+
+:host-context(.dark) #meetup-details .meta p:first-child {
+  color: #EEECEC;
+}
+
+:host-context(.dark) #meetup-details .meta p:last-child {
+  color: rgba(238, 236, 236, 0.7);
+}
+
+:host-context(.dark) #meetup-details .talk-title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

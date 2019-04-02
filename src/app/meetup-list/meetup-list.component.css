@@ -1,0 +1,16 @@
+#meetups {
+  margin-top: -80px;
+  margin-bottom: 100px;
+}
+
+#meetups li {
+  margin-bottom: 24px;
+}
+
+#meetups li:first-child .event {
+  border-top-left-radius: 40px;
+}
+
+#meetups li:last-child .event {
+  border-bottom-right-radius: 40px;
+}

@@ -1,0 +1,22 @@
+<ul id="meetups" class="details">
+  <li>
+    <app-meetup [meetup]="meetup"></app-meetup>
+    <div id="meetup-details">
+      <ul>
+        <li *ngFor="let speaker of meetup.speakers">
+          <div class="speaker-infos">
+            <p><img src="assets/img/speakers/speaker-thierno.png" alt="thierno"></p>
+            <div class="meta">
+              <p>{{speaker.name}}</p>
+              <p>{{speaker.title}}</p>
+
+            </div>
+          </div>
+          <p class="talk-title"><i class="icon-talk"></i>
+            {{speaker.subject}}</p>
+        </li>
+
+      </ul>
+    </div>
+  </li>
+</ul>>
